@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson - Roblox Lua Learning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+  <link rel="stylesheet" data-name="vs/editor/editor.main" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/editor/editor.main.min.css">
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="back-link" id="back-to-unit">
+      <i data-lucide="arrow-left"></i>
+      Back to Unit
+    </a>
+
+    <div class="lesson-header" id="lesson-header">
+      <!-- Lesson header will be dynamically inserted here -->
+    </div>
+
+    <div class="tabs">
+      <div class="tabs-list">
+        <button class="tab active" data-tab="lesson">
+          <i data-lucide="book-open"></i>
+          Lesson Content
+        </button>
+        <button class="tab" data-tab="challenge">
+          <i data-lucide="code"></i>
+          Coding Challenge
+        </button>
+      </div>
+
+      <div class="tab-content active" id="lesson-content">
+        <!-- Lesson content will be dynamically inserted here -->
+      </div>
+
+      <div class="tab-content" id="challenge-content">
+        <!-- Challenge content will be dynamically inserted here -->
+        <div class="code-editor-container">
+          <h3>Code:</h3>
+          <div id="monaco-editor" style="height: 300px; border: 1px solid #ccc;"></div>
+          
+          <div class="editor-actions">
+            <button id="run-code" class="button primary">Run Code</button>
+            <button id="reset-code" class="button outline">Reset Code</button>
+            <button id="show-solution" class="button outline">Show Solution</button>
+          </div>
+          
+          <h3>Output:</h3>
+          <div id="code-output" class="code-output">
+            <div class="output-placeholder">Run your code to see output</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-navigation" id="lesson-navigation">
+      <!-- Navigation buttons will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <script>var require = { paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs' } };</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/loader.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/editor/editor.main.nls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/editor/editor.main.js"></script>
+  <script src="data.js"></script>
+  <script src="lesson.js"></script>
+</body>
+</html>

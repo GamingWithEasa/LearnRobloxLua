@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox Lua Learning Platform</title>
+  <title>Unit - Roblox Lua Learning Platform</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
 </head>
 <body>
-  <main class="container">
-    <div class="header">
-      <h1>Roblox Lua Learning Platform</h1>
-      <p>An interactive educational platform to learn Roblox Lua programming through structured lessons and practical challenges</p>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <i data-lucide="arrow-left"></i>
+      Back to All Units
+    </a>
+
+    <div class="unit-header" id="unit-header">
+      <!-- Unit header will be dynamically inserted here -->
     </div>
 
-    <div class="units-grid" id="units-container">
-      <!-- Units will be dynamically inserted here -->
+    <div class="lessons-list" id="lessons-container">
+      <!-- Lessons will be dynamically inserted here -->
     </div>
-  </main>
+  </div>
 
   <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="unit.js"></script>
 </body>
 </html>
